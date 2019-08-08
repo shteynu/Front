@@ -1,0 +1,25 @@
+@import "../../Common/common.css";
+
+.container
+{
+    padding: 3vmin;
+    border: 0.15vmin solid #666600;
+    border-radius: 1vmin;
+    background-color: khaki;
+}
+.container td{
+    width: 10vmin; height: 10vmin;
+    min-width: 10vmin; min-height: 10vmin;
+}
+
+
+.container tr:nth-child(odd)>td:nth-child(odd),
+.container tr:nth-child(even)>td:nth-child(even)
+{
+    background-color: #666600;
+}
+.container tr:nth-child(odd)>td:nth-child(even),
+.container tr:nth-child(even)>td:nth-child(odd)
+{
+    background-color: #ffffcc;
+}

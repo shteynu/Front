@@ -1,0 +1,35 @@
+@import "../../Common/common.css";
+
+.stripe{
+    position: absolute;
+    width: 100vw; height: 10vh;
+    background-color: blue;
+}
+
+.upper{top: 10vh; }
+.lower{top: 80vh; }
+
+.star-container {
+    width: 40vh;
+    height: 40vh;
+}
+.triangle-up{
+    position: absolute;
+    width: 0; height: 0;
+    left: 0vh; top: -3vh;
+
+    border-left: 20vh solid transparent;
+    border-right: 20vh solid transparent;
+    border-bottom: 34.6vh solid blue;
+}
+
+.triangle-down{
+    position: absolute;
+    width: 0; height: 0;
+    left: 0vh; top: 9vh;
+
+    border-left: 20vh solid transparent;
+    border-right: 20vh solid transparent;
+    border-top: 34.6vh solid blue;
+}
+

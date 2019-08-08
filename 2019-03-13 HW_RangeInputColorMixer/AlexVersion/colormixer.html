@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="colormixer.css">
+    <script src="colormixer.js" defer></script>
+</head>
+<body>
+    <div class="centered container">
+        <div id="bigSquare" class="big-square"></div>
+        <div class="color-panel">
+            <table>
+                <tr>
+                    <td>R</td>
+                    <td><input id="redValue" type="range" min="0" max = "255"></input></td>
+                    <td id="redTD"></td>
+                </tr>
+                <tr>
+                    <td>G</td>
+                    <td><input id="greenValue" type="range" min="0" max = "255"></input></td>
+                    <td id="greenTD"></td>
+                </tr>
+                <tr>
+                    <td>B</td>
+                    <td><input id="blueValue" type="range" min="0" max = "255"></input></td>
+                    <td id="blueTD"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="result">
+            <div id="hexResult" class="hexRes"></div>
+            <div id="hslResult" class="hslRes"></div>
+        </div>
+    </div>
+</body>
+</html>

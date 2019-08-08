@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="resources/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">WebSiteName</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Page 1</a></li>
+            <li><a href="#">Page 2</a></li>
+            <li><a href="#">Page 3</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    <h2>Add user</h2>
+    <div class="row">
+        <div class="form-group col-md-4">
+            <label for="firstName">First Name:</label>
+            <input type="text" class="form-control" id="firstName">
+        </div>
+        <div class="form-group col-md-4">
+            <label for="lastName">Last Name:</label>
+            <input type="text" class="form-control" id="lastName">
+        </div>
+        <div class="form-group col-md-4">
+            <label for="email">Email:</label>
+            <input type="text" class="form-control" id="email">
+        </div>
+    </div>
+    <br>
+
+    <div class="col-md-offset-10">
+        <button class="btn btn-lg btn-success" onclick="myFunction()">Add New User</button>
+    </div>
+
+    <div id="test">
+
+    </div>
+
+
+    <hr>
+    <h2>Show user</h2>
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td id="name"></td>
+            <td id="surname"></td>
+            <td id="mail"></td>
+        </tr>
+        <tr>
+            <td>Mary</td>
+            <td>Moe</td>
+            <td>mary@example.com</td>
+        </tr>
+        <tr>
+            <td>July</td>
+            <td>Dooley</td>
+            <td>july@example.com</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<script>
+    function myFunction() {
+        var x = document.getElementById("firstName").value;
+        var y = document.getElementById("lastName").value;
+        var z = document.getElementById("email").value;
+
+        document.getElementById("name").innerHTML = x;
+        document.getElementById("surname").innerHTML = y;
+        document.getElementById("mail").innerHTML = z;
+    }
+</script>
+</body>
+</html>

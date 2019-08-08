@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="bookinput.css">
+    <script src="validators.js"></script>
+    <script src="bookinput.js" defer></script>
+</head>
+<body>
+    <div class="centered container">
+        <div class="header">Book</div>
+        <table>
+            <tr>
+                <td><label for="author">Author:</label></td>
+                <td><input id="author"/></td>
+            </tr>
+            <tr>
+                <td><label for="title">Title:</label></td>
+                <td><input id="title"/></td>
+            </tr>
+            <tr>
+                <td><label for="year">Year:</label></td>
+                <td><input id="year"/></td>
+            </tr>
+            <tr>
+                <td><label for="price">Price:</label></td>
+                <td><input id="price"/></td>
+            </tr>
+        </table>
+        <div class="but-bar"><button onClick="ok()">OK</button></div>
+        <div id="result" class="result"></div>
+    </div>
+</body>
+</html>

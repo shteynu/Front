@@ -1,0 +1,14 @@
+.red
+{
+    position: absolute;
+    width: 150px; height: 150px;
+    left: 150px;top: 0;
+    background-color: red;
+}
+.green
+{
+    position: absolute;
+    width: 150px;height: 150px;
+    left: 0; top: 150px;
+    background-color: green;
+}

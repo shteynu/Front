@@ -1,0 +1,17 @@
+@import "../../Common/common.css";
+
+.container {
+    display: grid;
+    width: 80vh;
+    height: 80vh;
+    grid-template-columns: 24% 24% 24% auto;
+    grid-template-rows: 24% 24% 24% auto;
+    grid-gap: 1% 1%;
+}
+
+.container > div {
+    position: relative;
+    box-shadow: 0.5vh 0.5vh 1.5vh 0 rgba(0,0,0,25);
+    font-size: xx-large;
+}
+

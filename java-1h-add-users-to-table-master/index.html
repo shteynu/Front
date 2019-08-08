@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="stylesheet" href="resources/bootstrap.min.css">
+    <script src="resources/jquery.min.js"></script>
+    <script src="resources/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+    <script src="table-add.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h3>Find us on facebook</h3>
+    <img    style="height: 30px; width: 30px; cursor: pointer"
+            onclick="navigateToFacebook()"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAaVBMVEVOcaj///9Fa6WktNCcrsxCaaRMb6f3+fs/Z6NJbaa0wNZbe67U2+g8ZaJth7TGz9+/yt7x9Ph8lLzf5e6LoMNUdqvM1eRigLGyv9Y4YqF2j7lhf7Dr7/X5+vyHnMBvi7iWqMja4OupuNLvgiw1AAAJ+ElEQVR4nOWd24LqIAxFKQpT1GqvtuPd8/8feVqd0d6LmC3V2U/zVLumEJIQCHPQ2gfR2s+mcXhM50nCGEuSeXoM42nmr6NgD/99Bnx2EK0mhyXzXMG5UlIyya7K/5JKcS5cjy0Pk1UUAN8CRRj58TIRgqtfqi5JxYVIlrEfgd4EQRhlIeNCqQG2spQSnIUZgpKaMFjFzONDH67jc3KPxSvqEUtKuJuFUjzy6ZriQoazHeVL0RF++Zscz+zrVb6kEnLjf5G9FxXh4uAK+TzeD6QU4rAgejMSwiDbus8Nziak8rYZyZQkIIxOTFB9vQqkYCcC4/o04TnkHIB3Feebs2XCxdEjHp41Ke/45IR8inCx8RDDsyrpbZ5ifIIwCiHTryklwifmozFhEFObzz5GNza2q6aE//jr+Apxnr2UcLF90QC9S4rUbDqaEH7FL+crpERs4ssZEK5ePEBLjHz1AsLg4FriK+QeHrY4jxKuE5wHoyOerLGEU9fGDCxLulMg4S4VlvkKifShCPkRwhVBfEshKR8xOA8QTsbwAa8SEwDhPhwPYI4YaqeSdQl3c7s2tC4+152MmoRnNo4peJdMzpSEa8MMKFJS6a2MWoSzb9s4rfqeURH+82yzdMjTiag0CEe0StSls2oME05tetpD0nDhBgmnYx2iV3mDiEOEkzF/wULu0EAdIPw33jn4KzFgbvoJZ+Meold5/YtGL+F6nOtgXd+9S38f4XmEnkyr1NmMcDc6X7RLMulxw7sJ9/N3AcwR593BVDdhOK5wqV88fJxwxL5am7r9ty7C1XsB5ohduZsOwp2ttLa5ZIe16SBM38fK/EqmjxCe3m2MFhLtTngr4Xrs7na73Fbfpo0wSN5vjBaSSdu2TRvh4Z1WwrL4QY9w9Z5jtJDbsmQ0Cb9e8gWLMuG6CB7Lm7vETcIYvBRKxV2Ps2Te1PMPV/Ew4QK6UEjhzU/ZehcEXw3t1wQ/LRrlDA3CLdCOKpH2VccuCAyAaqz7dUJgYkaKQ39pEwVhM21TIwxwYb0YLMEjIZS8tijWCGFmRg4nNmkIGa8ZmyphhFoKpU4lDA0hc6tzoUoYoj6h1k4YEaGqxvsVQthK0eZrwAhrK0aFcAMyM5qFBVSEatNFuABluOVRC5CMkHnlj1gmPGI+oeSaFb5khJV/aYnwDPqE/KQHSEfIvNL/tEQIMqRS6daF0BGWzemdMAJFTaotLAUTstLEuBOeQISudvEyJeF9ZtwIA7KnVyWFLiAlIWM37/RGmIFW+5aY9BWE9xDjRoiKC4VvhfCeH/4lRK32zNMvdyUdpd65RniAZWf0T9yfKQlvQdQP4R4WNi17kIKFX9aE8r8sxb5C6KOiir7VMGOuKIt2GP0agB9CVFTBVLfLBi4IlJsy4Y7skHJdvDN5sQNvjsifDcUr4QyWYeOdoSFsYvzqZ5heCWHZix7CCXr34Mf9vhAGuIMU3YRTNKFUwY0QWJZgkfAnO3QhBG7G2CS8usQXQuCv2CRk7JcwAi5MVgkvyYyCMAP+llVCPvshDIFrr1XCy3rBsNPQ8jxkV0JUCuoiu4RFQoqB3Se7hIXjxsClCXYJi8gmJ1zSEwr3V9+dscXJc2uiH0tqWRAGCfmDt+vVTZ17FudVQ1vyN0mCnDAi/9f1Zi76RJ/vE1FOSO92mxICRpNY5YT0cZopISDTkBs6BsgjmhLSz5ciEcacJfk/zpSQNCN8exW2J3+qMSEiEE/2LKAPnUwJETGOFzBAkZApISI35UaMouSxJlPCE8B9FGvm0//jTAkRu0PCZ4DBb0p4BBDyjE3pH2tIuEds0qopA8ROpoTkL8KKjCIDJGkMCb8Qe5gyZIBSL0PCHSKpKY8sBTzVjJB0k/umlAFO+xoSYnZPtow+JjMlxGxiJiMi/AdJTQH4jAkRThtK89lNWWfd3iKbVUUfqALFb/ruzJeePF4VChAyTu+yvG8BsjRljYAQfPuFdcItwqcpyzphivBLy7JNmPulyA1gNgLCEBEflmWbMI8PATF+WdYJp4g8TVm2CXmGyLVVfsEyofAR+dKyrBOuETnvsmwTuhFi36Is24RegNh7Kss2YbJH7B+WZZmw2D8EniUpZJnwsgeMrbe2THjZx8fezGaZ8FKLAagPKMkyoRthaqJKskx4qYlC1LXdZblyb/lHahM/v77082uEP7/O+w/U6n/+eYvPPzPz+eeenBjYK9UiIb+fXfv884cB7KDzWM6QWjkHDCcsnwO2cpYbTlg5yw08j2+NsHoeH3engkXCn7ui0Pdi2COs3YvxheoOa42wfrcJLKdojbB+Pw3iNMf1h2wRNu4YQt0TZYuweU8U6q4vW4Qtd32B7muzNkqb97WB7tyzRNh25x4oIWWHULbem4hxv+0Qtt99ibm/1A7hbamoEkLuoLVC2HUHLeRmQSuEnfcIOxv6mWiDsPsuaMR93jYIefd93gBzaoGw7052wL36Fgh779Wnz5y+nrC/NwJ9f4uXEw71tyDvUfJywqEeJY6T0hqbVxMO95mhXjHUxGl2BSoEOuak0SuIuHBBtvV1ugjS3K1uZloJiXt2NVtzEbboakirZ9fn9137A73z/kD/w8/vYZmvVZ/eh/Qte8k21/pews/vB/x+PZ3bJ2EP4ef35f4DvdWdPfiEMKXUtruLRjehs3ubhV8mPY1Qegid87sYVHXuoegjdNbftt9dS9+9zRV7CZ0Z9mAbjbxZL0M/IawLFKEaiZnHCJ3J2J1wd6h75BChMx33QB1uUTtI6EzH/BXd4R68w4Rj9t90GpxqEDrZWAeqN2BktAmd2TjXxe/+ZeIRQmeNa7VjLKnVRVmX0DmPzkdVyVnv1TUJnd18XMEU3+p2HdQldPbhmEyqCLWbDmoTjmrV0GyD/Sihs8Idy3hISmo1MjcgdHbpGD6jSPUbfz5KWLhwtj+j1HDUniF01oldm8oTvVXQnNAJDjY9cffQtvlCS5gbHG4rf8P5IybGnND5iomboupJibi5w4shdJxFijqB0ikpUu0W5gSExeno11ocznUiJUpCJ4jd1w1V5cYPW5inCR0nCl80HRUPO7tGQQnz6bjx8NNRehuzCUhBmDMePeh3lMo7PsX3NGEeG4dAm8N5eH72BZ8mzOfjiUHWDinY6Yn5R0iY29Us9YgLUyX30szYfpZFQpjrHAtBFj5KKUR8JnozKkLH2fsbKQhyclIJGfraSYpB0RHm2vmhcp+zO8pVof9QhDskUsJcwSpmnmHwobjH4hXJ5CuJmrBQNAsZF+oRTKUET8IZgelsCEFYKPJPy0QIPjgxpeLCTZYnH0FXCEVYKIhWk8My8dyCVFUsrZQqJxOulywPk1VEPTLLQhJetQ+itZ9N4/CYbpPiBsMk2abHMJ5m/joK6Gxml/4DaI+Pf9viR30AAAAASUVORK5CYII=">
+    <br>
+    <br>
+    <h1 class="text-center text-capitalize">add users</h1>
+    <div class="row">
+        <div class="form-group col-md-4">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" class="form-control">
+        </div>
+
+        <div class="form-group col-md-4">
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" class="form-control">
+        </div>
+
+        <div class="form-group col-md-4">
+            <label for="email">Email:</label>
+            <input type="text" id="email" class="form-control">
+        </div>
+
+
+    </div>
+    <div class="col-md-offset-11">
+        <button type="button" class="btn btn-success" onclick="gatherInputResults2()">Add user</button>
+    </div>
+
+    <h2>Users</h2>
+    <table class="table table-hover" id="table">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody id="tbody">
+        <!--<tr>-->
+            <!--<td>John</td>-->
+            <!--<td>Doe</td>-->
+            <!--<td>john@example.com</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+            <!--<td>Mary</td>-->
+            <!--<td>Moe</td>-->
+            <!--<td>mary@example.com</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+            <!--<td>July</td>-->
+            <!--<td>Dooley</td>-->
+            <!--<td>july@example.com</td>-->
+        <!--</tr>-->
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+.container{
+    position: absolute;
+    border-bottom: 2px ridge burlywood;
+    height: 100%;
+    width: 100%;
+    background-color: deepskyblue;
+}
+.land{
+    position: relative;
+    background-color: darkolivegreen;
+    border-top: 1px ridge blanchedalmond;
+    top: 400px;
+    left: 0;
+    height: 35%;
+}
+.sun{
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    background-color: yellow;
+    border-radius: 50%;
+
+}
+@keyframes sunfall {
+    0% { top: 0; left: 0;}
+    100% {top: 450px; left: 60%;background-color: red;}
+}
+@keyframes colorSet {
+    0% {background: #3498db;}
+    25% {background: #164e74;}
+    50% {background: #e67e22;}
+    75% {background: darkred;}
+    100% {background: #02070a;}
+}
+@keyframes landColor {
+    50%{background: darkgoldenrod;}
+    100%{background: darkgray}
+
+}
+@keyframes textAn {
+    0%   { }
+    50%  { top: 25%; left: 25%; }
+    100% { top: 50%; left: 50%; }
+}
+.travel{
+    animation-name: sunfall;
+    animation-duration: 15s;
+}
+.container{
+    animation: colorSet;
+    animation-duration:15s;
+}
+.land{
+    animation: landColor;
+    animation-duration:15s;
+}
+.spano{
+    position: absolute;
+    top: 0px;
+    left: -400px;
+    animation: textAn;
+    animation-delay: 2s;
+    animation-duration: 13s;
+}
+#span{
+    font-size: 100px;
+}

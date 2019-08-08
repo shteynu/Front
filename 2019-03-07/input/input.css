@@ -1,0 +1,28 @@
+@import "../../Common/common.css";
+
+.container
+{
+    padding: 2vh 2vw;
+}
+.container td
+{
+    padding: 1vh 1vw;
+}
+.container input
+{
+    outline: none;
+    border: none;
+
+    width: 50vh;
+
+    border-bottom: 0.15vh solid darkgray;
+    padding: 1vh 1vw;
+
+    font-size: 3vh;
+}
+.container input:hover{
+    background-color: #d8d8d8;
+}
+.container input:focus{
+    border-bottom-color: blue;
+}

@@ -1,0 +1,16 @@
+.sq {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+
+}
+.r{
+    background-color: red;
+    top: 200px;
+    left: 200px;
+}
+.g{
+    background-color: green;
+    top: 100px;
+    left: 100px;
+}

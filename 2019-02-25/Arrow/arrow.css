@@ -1,0 +1,16 @@
+.arrow-down
+{
+    position: absolute;
+    top: 200px; left: 350px;
+    width: 0;height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-top: 173px solid green;
+}
+
+
+.arrow-up
+{
+    transform: rotate(15deg);
+}
+

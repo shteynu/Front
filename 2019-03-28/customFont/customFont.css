@@ -1,0 +1,8 @@
+@font-face {
+    font-family: masa;
+    src: url("SCRIPTIN.ttf");
+}
+
+.first{position: absolute; top: 200px; left: 200px;
+        font-family: masa; font-size: 50px;
+        text-shadow: 15px 15px 5px red, 7px 7px 3px blue}

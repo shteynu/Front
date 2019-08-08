@@ -1,0 +1,18 @@
+.first
+{
+    position: absolute;
+    width: 300px; height: 200px;
+    left: 250px; top: 100px;
+
+  /*  border-top: 70px solid red;
+    border-right: 40px solid blue;
+    border-bottom: 120px solid green;
+    border-left: 50px solid yellow;*/
+
+    border-width: 70px 40px 120px 50px;
+    border-style: solid;
+    border-color: red blue green yellow;
+
+
+
+}

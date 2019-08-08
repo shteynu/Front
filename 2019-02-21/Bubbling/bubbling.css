@@ -1,0 +1,24 @@
+.r
+{
+    position: absolute;
+    width: 200px;height: 200px;
+    background-color: red;
+}
+.g
+{
+    position: absolute;
+    left:500px;
+    width: 150px;height: 150px;
+    background-color: green;
+}
+.b
+{
+    position: absolute;
+    top: 400px;
+    width: 100px;height: 100px;
+    background-color: blue;
+}
+.y
+{
+    background-color: yellow;
+}

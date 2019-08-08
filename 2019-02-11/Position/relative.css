@@ -1,0 +1,25 @@
+.red
+{
+    position: relative;
+    width: 150px; height: 150px;
+    left: 0; top: 450px;
+    background-color: red;
+}
+.green
+{
+    position: relative;
+    width: 150px; height: 150px;
+    left: 75px; top: 75px;
+    background-color: green;
+}
+.displaynone
+{
+    display: none;
+}
+.blue
+{
+    width: 150px; height: 150px;
+    left: 375px; top: 75px;
+    background-color: blue;
+    margin-left: 500px;/*not advised to play with margins*/
+}

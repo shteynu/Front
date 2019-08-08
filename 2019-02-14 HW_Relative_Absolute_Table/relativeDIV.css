@@ -1,0 +1,60 @@
+@import "../Common/common.css";
+
+.container
+{
+    width: 450px;height: 450px;
+}
+.sq
+{
+    position: relative; width: 150px; height: 150px;
+}
+.red
+{
+    left: 0px;top: 0px;
+    background-color: red;
+}
+.blue
+{
+    left: 0px;top: 0px;
+    background-color: blue;
+}
+.green
+{
+
+    left: 0px;top: 0px;
+    background-color: green;
+}
+
+.yellow
+{
+    top: -450px;left: 150px;
+    background-color: yellow;
+}
+.black
+{
+    top: -450px;left: 150px;
+    background-color: black;
+}
+.pink
+{
+
+    top: -450px;left: 150px;
+    background-color: deeppink;
+}
+.fuchsia
+{
+
+    top: -900px;left: 300px;
+    background-color: fuchsia;
+}
+.turquoise
+{
+
+    top: -900px;left: 300px;
+    background-color: turquoise;
+}
+.orange
+{
+    top: -900px;left: 300px;
+    background-color: orange;
+}

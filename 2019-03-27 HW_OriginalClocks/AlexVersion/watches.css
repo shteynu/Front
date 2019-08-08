@@ -1,0 +1,80 @@
+@import "../../Common/common.css";
+
+body{background-color: hsl(240,60%,95%)}
+
+.container {
+    width: 500px; height: 500px;
+}
+.hatch {
+    position: absolute;
+    width:0; height: 40px;
+    left: 250px; top: 0;
+    border: 1px solid black;
+
+    transform-origin: left 250px;
+}
+.frame {
+    position: absolute;
+    width: 40px; height: 40px;
+    left: 230px; top: -40px;
+    transform-origin: center 290px;
+}
+.figure{
+    position: absolute;
+    width: 40px; height: 40px;
+    left: 0px; top: 0px;
+    text-align: center; line-height: 40px;
+    font-size: 30px;
+    transform-origin: center center;
+}
+
+.secondArrow{
+    z-index: 10;
+    position: absolute;
+    width: 0; height: 230px;
+    left: 250px;  top: 20px;
+    border: 1px solid hsl(0, 100%, 50%);
+
+    transform-origin: bottom center;
+
+}
+.minuteArrow{
+    z-index: 10;
+    position: absolute;
+    width: 1px; height: 220px;
+    left: 249px;  top: 30px;
+    border: 1px solid red;
+    border-radius: 2px;
+    transform-origin: bottom center;
+    background-color: red;
+
+}
+
+.hourArrow{
+    z-index: 10;
+    position: absolute;
+    width: 3px; height: 140px;
+    left: 249px;  top: 110px;
+    border: 1px solid red;
+    border-radius: 3px;
+    transform-origin: bottom center;
+    background-color: red;
+}
+
+.smallCircle{
+    z-index: 20;
+    position: absolute;
+    width:8px; height: 8px; border-radius: 4px; background-color: #a00000;
+    left: 248px; top: 248px;
+}
+
+.numbers{
+    position: absolute;
+    padding: 10px;
+    left: 50%; top: 75%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    font-size: 22px;
+    border-radius: 10px;
+    box-shadow: -3px -3px 3px 0 hsl(240,60%,80%);
+}

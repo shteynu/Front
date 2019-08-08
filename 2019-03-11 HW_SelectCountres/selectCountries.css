@@ -1,0 +1,11 @@
+@import "../Common/common.css";
+body{
+    background-image: url("xc.jpg");
+}
+.container {padding: 2vh 2vw;
+    box-shadow: 0.5vh 0.5vh 1.5vh 0 rgba(0,0,0,0.2);
+    font-size: 3vh;
+    width: 20vw; height: 3vh;}
+.container > select {
+    outline: none; margin: 0 1vw; font-size: 2.5vh;
+}

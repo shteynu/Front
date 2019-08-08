@@ -1,0 +1,12 @@
+Static typization
+Все типы (String s ...) известные компилятору на этапе компиляции
+
+String s = "abc";
+var s = "abc"; //String s = "abc";
+
+
+
+Dynamic typization
+Типы определяем в Runtime
+
+var s = true + 1;

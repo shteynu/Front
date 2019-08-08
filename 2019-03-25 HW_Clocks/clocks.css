@@ -1,0 +1,57 @@
+@import "../Common/common.css";
+body{background-color: #5bc0de}
+.container{
+    padding: 3vmin;
+    width: 50vw;
+    height: 50vh;
+    border: 0.15vmin solid #666600;
+    background-color: hsl(240,60%,95%);
+    border-radius: 30vmin;
+
+}
+
+.first{
+    position: relative;
+    left: 12vh;
+    top: 17vh;
+}
+.second{
+    position: relative;
+    left: 48vh;
+    top: 11vh;
+}
+.third{
+    position: relative;
+    left: 82vh;
+    top: 5vh;
+}
+.fourth{
+    position: relative;
+    left:29vh;
+    top:15vh;
+}
+.fifth{
+    position: relative;
+    left: 50vh;
+    top:15vh;
+}
+
+.container>button{
+    width: 90px;
+    height: 30px;
+    border-radius: 1vh;
+    box-shadow: -3px -3px 3px 0 hsl(240,60%,80%);
+    font-size: 20px;
+
+}
+.container>div{
+    text-align: center;
+    width: 6vw;
+    height: 4vh;
+    padding: 1vmin;
+    font-size: 25px;
+    border-radius: 1vh;
+    background-color: white;
+    box-shadow: -3px -3px 3px 0 hsl(240,60%,80%);
+
+}

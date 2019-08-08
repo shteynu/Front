@@ -1,0 +1,9 @@
+@import "../../Common/common.css";
+
+.container {
+    font-size: 5vh;
+}
+
+select {
+    font-size: 5vh;
+}

@@ -1,0 +1,46 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script src="index.js"></script>
+    <script src="users.js"></script>
+</head>
+
+<body>
+<div class="container">
+    <br>
+    <br>
+    <br>
+    <div class="card shadow">
+        <div class="card-header alert-success">
+            <h4 class="card-title text-center">Person System</h4>
+        </div>
+
+        <div class="card-body">
+
+            <label for="user-input">Add new user: </label>
+            <input type="text" id="user-input">
+            <button class="btn btn-success btn-sm" onclick="addNewPerson()">Add</button>
+        </div>
+
+        <div class="card-body">
+            <table id="person" class="table table-hover">
+                <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+@import "../../Common/common.css";
+
+label, input, button {cursor: pointer;}
+.container {
+    padding: 2vh 2vw;
+    border: 0.15vh solid darkblue;
+    border-radius: 1vh;
+
+    font-size: 3vh;
+}
+.container > .header {
+    position: relative;
+    padding: 1vh 1vw;
+    text-align: center;
+    color: darkblue;
+}
+.container > table {position: relative;}
+.container > table td {padding: 1vh 1vw;}
+.container > table td:first-child {text-align: right;}
+.container > table input {
+    outline: none;border: none;
+
+    padding: 1vh 0.5vw;
+    border-bottom: 0.15vh solid gray;
+    font-size: 3vh;
+}
+.container > table input:focus {
+    border-bottom: 0.15vh solid blue;
+    background-color: #d8d8ff;
+}
+
+.container > table input:hover {
+    background-color: #ffffd8;
+}
+
+.container > .but-bar{
+    position: relative;
+    padding: 2vh 1vw 1vh;
+    text-align: center;
+}
+
+.container button{
+    outline: none; border: none;
+    padding: 1vh 2vw;
+    background-color: blue;
+    color: white;
+    font-size: 3vh;
+}
+.container button:hover{
+    background-color: darkblue;
+    color: lightyellow;
+}
+
+.container > .result {
+    position: relative;
+    min-height: 6vh;
+    text-align: center;
+    background-color: #d8d8d8;
+    padding: 1vh 1vw;
+}
+.success {color: darkgreen;}
+.fail {color: darkred;}
+
+

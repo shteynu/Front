@@ -1,0 +1,13 @@
+Strong typization
+Java
+String s = "abc"; // -> char [] || byte []
+s = new Person(); //compilation error!
+
+============================================
+
+Weak typization
+JavaScript	
+var s = "abc"; //3B
+s = new Person(); //s : Person 
+s = true; //s : bool
+

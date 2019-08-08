@@ -1,0 +1,7 @@
+.sq
+{
+    position: absolute;
+    width: 150px;height: 150px;
+    top: 200px;left:200px;
+    background-color: red;
+}
